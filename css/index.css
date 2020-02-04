@@ -157,3 +157,50 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  width: 100%;
+  background-color: #00A35E;
+  padding: 1.5%;
+}
+nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5%;
+}
+nav h2 {
+  color: #FAFAFA;
+  font-size: 2rem;
+}
+nav a {
+  color: #FAFAFA;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 1.7rem;
+  margin-left: 40px;
+}
+header .heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 6%;
+}
+header img {
+  width: 100%;
+}
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 3%;
+}
+header p {
+  color: #555555;
+}
+header .btn {
+  background-color: white;
+  border: 1px solid #00A35E;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 1.5%;
+  display: block;
+  width: 15%;
+  color: #00A35E;
+  text-align: center;
+}

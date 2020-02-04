@@ -132,6 +132,17 @@ table {
 html {
   font-size: 62.5%;
 }
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bolder;
+}
 h1 {
   font-size: 4rem;
 }
@@ -160,47 +171,227 @@ img {
 nav {
   width: 100%;
   background-color: #00A35E;
-  padding: 1.5%;
+  padding: 1%;
 }
 nav .navbar {
   display: flex;
   justify-content: space-between;
-  margin-top: 1.5%;
+  align-items: center;
 }
 nav h2 {
   color: #FAFAFA;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  margin-top: 7px;
 }
 nav a {
   color: #FAFAFA;
   justify-content: space-between;
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   margin-left: 40px;
+}
+footer {
+  padding: 1%;
+  background-color: #2D2D2D;
+  position: relative;
+}
+footer .footer-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-wrap .copyright-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1%;
+}
+footer .footer-wrap .copyright-wrap .copyright {
+  font-size: 1.6rem;
+  justify-content: center;
+  color: white;
+}
+footer .footer-wrap .copyright-wrap .copyright-name {
+  color: #00A35E;
+  margin-left: 5px;
+}
+footer .footer-wrap .contact-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1%;
+  color: #00A35E;
+}
+footer .footer-wrap .contact-wrap i {
+  font-size: 1.5rem;
+  margin-top: 5.5px;
+  margin-right: 3.5px;
+}
+footer .footer-wrap .contact-wrap .contact {
+  font-size: 1.6rem;
+}
+header {
+  background-color: #FAFAFA;
 }
 header .heading {
   display: flex;
   justify-content: space-between;
   padding: 6%;
 }
-header img {
-  width: 100%;
+header .heading .img-main {
+  width: 175%;
+  position: relative;
 }
-header h1 {
-  font-size: 2rem;
+@media (max-width: 400px) {
+  header .heading .img-main {
+    flex-direction: column-reverse;
+  }
+}
+header .heading div {
+  position: relative;
+  margin-right: 50px;
+}
+@media (max-width: 400px) {
+  header .heading div {
+    width: 45%;
+  }
+}
+header .heading div h1 {
+  font-size: 3rem;
   margin-bottom: 3%;
+  color: #00A35E;
 }
-header p {
+header .heading div p {
   color: #555555;
+  font-size: 1.8rem;
 }
-header .btn {
+header .heading div .btn {
   background-color: white;
   border: 1px solid #00A35E;
   border-radius: 5px;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding: 1.5%;
   display: block;
-  width: 15%;
+  width: 24%;
   color: #00A35E;
   text-align: center;
+}
+.mid-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+}
+.mid-section .m1 {
+  background-color: #FAFAFA;
+  width: 30%;
+  padding: 2%;
+}
+.mid-section .m1 i {
+  font-size: 5rem;
+  margin-left: 40%;
+  color: #00A35E;
+}
+.mid-section .m1 h2 {
+  font-size: 2.4rem;
+  margin-top: 10%;
+}
+.mid-section .m1 p {
+  font-size: 1.8rem;
+}
+.mid-section .m2 {
+  background-color: #FAFAFA;
+  width: 30%;
+  padding: 2%;
+}
+.mid-section .m2 i {
+  font-size: 5rem;
+  margin-left: 40%;
+  color: #00A35E;
+}
+.mid-section .m2 h2 {
+  font-size: 2.4rem;
+  margin-top: 10%;
+}
+.mid-section .m2 p {
+  font-size: 1.8rem;
+}
+.mid-section .m3 {
+  background-color: #FAFAFA;
+  width: 30%;
+  padding: 2%;
+}
+.mid-section .m3 i {
+  font-size: 5rem;
+  margin-left: 40%;
+  color: #00A35E;
+}
+.mid-section .m3 h2 {
+  font-size: 2.4rem;
+  margin-top: 10%;
+}
+.mid-section .m3 p {
+  font-size: 1.8rem;
+}
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FAFAFA;
+}
+.bottom-section div {
+  padding: 10%;
+}
+.bottom-section h1 {
+  color: #00A35E;
+  font-size: 3rem;
+  margin-bottom: 3%;
+}
+.bottom-section p {
+  font-size: 1.6rem;
+}
+.bottom-section .btn {
+  background-color: white;
+  border: 1px solid #00A35E;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  padding: 1.5%;
+  display: block;
+  width: 50%;
+  color: #00A35E;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .bottom-section .btn {
+    background-color: white;
+    border: 1px solid #00A35E;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    padding: 1.5%;
+    display: block;
+    width: 20%;
+    color: #00A35E;
+    text-align: center;
+  }
+}
+.bottom-section .bottom-image {
+  width: 200%;
+  position: relative;
+}
+@media (max-width: 800px) {
+  .bottom-section .bottom-image {
+    display: none;
+  }
+}
+.bottom-section .bottom-image img {
+  margin-top: 80px;
+  margin-bottom: -150px;
+}
+@media (max-width: 800px) {
+  .bottom-section .bottom-image img {
+    display: none;
+  }
+}
+.main-about {
+  text-align: center;
+  background-color: #E5E5E5;
+  padding: 20%;
+}
+.main-about h1 {
+  margin-bottom: 10%;
 }

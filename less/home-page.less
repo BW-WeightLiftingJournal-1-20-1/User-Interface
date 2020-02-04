@@ -1,39 +1,178 @@
 header {
-   
-
+   background-color: @background-color;
+  
     .heading {
         display: flex;
         justify-content: space-between;
         padding: 6%;
-    }
-    img{
-        width: 100%;
+
+    .img-main{
+        width: 175%;
+        position: relative;
+
+        @media @mobile {
+            flex-direction: column-reverse;
+        }
+
+        img {
+           
+        }
     }
 
+    div {
+        position: relative;
+        margin-right: 50px;
+
+        @media @mobile {
+           width: 45%;
+     }
     h1 {
-        font-size: 2rem;
+        font-size: 3rem;
         margin-bottom: 3%;
+        color: @main-color;
     }
 
     p{
         color: @main-font-color;
+        font-size: 1.8rem;
     }
 
     .btn {
-        .custom-btn(15%);
+        .custom-btn(24%);
     }
+  }
+ }
 }
 
 .mid-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+
     .m1 {
-        
+        background-color: @background-color;
+        width: 30%;
+        padding: 2%;
+
+        i {
+            font-size: 5rem;
+            margin-left: 40%;
+            color: @main-color;
+            
+        }
+
+        h2 {
+            font-size: 2.4rem;
+            margin-top: 10%;
+        }
+
+        p {
+            font-size: 1.8rem;
+        }
     }
 
     .m2 {
+        background-color: @background-color;
+        width: 30%;
+        padding: 2%;
 
+        i {
+            font-size: 5rem;
+            margin-left: 40%;
+            color: @main-color;
+        }
+
+        h2 {
+            font-size: 2.4rem;
+            margin-top: 10%;
+        }
+
+        p {
+            font-size: 1.8rem;
+        }
     }
 
     .m3 {
+        background-color: @background-color;
+        width: 30%;
+        padding: 2%;
 
+        i {
+            font-size: 5rem;
+            margin-left: 40%;
+            color: @main-color;
+        }
+
+        h2 {
+            font-size: 2.4rem;
+            margin-top: 10%;
+        }
+
+        p {
+            font-size: 1.8rem;
+        }
+      }
     }
-}
+
+    .bottom-section {
+        display: flex;
+        justify-content: space-between;
+        background-color: @background-color;
+        
+        div {
+            padding: 10%;
+            
+        }
+
+        h1 {
+            color: @main-color;
+            font-size: 3rem;
+            margin-bottom: 3%;
+        }
+
+        p {
+            font-size: 1.6rem;
+        }
+
+        .btn {
+            .custom-btn(50%);
+
+            @media @i-pad {
+                .custom-btn(20%);
+            }
+        }
+
+        .bottom-image {
+            width: 200%;
+            position: relative;
+            
+            @media @i-pad {
+                display: none;
+            }
+           
+        img {
+            margin-top: 80px;
+            margin-bottom: -150px;
+            
+            @media @i-pad {
+                display: none;
+            }
+        }
+      }
+    }
+
+    //about page 
+
+    .main-about {
+        text-align: center;
+        background-color: #E5E5E5;
+        padding:  20%;
+
+        h1 {
+            margin-bottom: 10%;
+        }
+
+        p {
+
+        }
+    }

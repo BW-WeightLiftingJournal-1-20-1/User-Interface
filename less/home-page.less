@@ -1,3 +1,5 @@
+.container-home {
+
 header {
    background-color: @background-color;
   
@@ -6,16 +8,21 @@ header {
         justify-content: space-between;
         padding: 6%;
 
+        @media @mobile {
+            flex-direction: column-reverse;
+                } 
+
     .img-main{
-        width: 175%;
+        width: 200%;
         position: relative;
 
         @media @mobile {
-            flex-direction: column-reverse;
-        }
+            width: 70%;
+            margin: 0 auto;
+                } 
 
         img {
-           
+
         }
     }
 
@@ -23,9 +30,6 @@ header {
         position: relative;
         margin-right: 50px;
 
-        @media @mobile {
-           width: 45%;
-     }
     h1 {
         font-size: 3rem;
         margin-bottom: 3%;
@@ -38,7 +42,7 @@ header {
     }
 
     .btn {
-        .custom-btn(24%);
+        .custom-btn(35%);
     }
   }
  }
@@ -47,12 +51,25 @@ header {
 .mid-section {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 2%;
 
+    @media @mobile {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    } 
+    
     .m1 {
         background-color: @background-color;
         width: 30%;
-        padding: 2%;
+        padding: 5%;  
+
+        @media @mobile {
+            width: 100%;
+            margin-top: 5%;
+            margin-bottom: 3%;
+        } 
 
         i {
             font-size: 5rem;
@@ -70,54 +87,16 @@ header {
             font-size: 1.8rem;
         }
     }
-
-    .m2 {
-        background-color: @background-color;
-        width: 30%;
-        padding: 2%;
-
-        i {
-            font-size: 5rem;
-            margin-left: 40%;
-            color: @main-color;
-        }
-
-        h2 {
-            font-size: 2.4rem;
-            margin-top: 10%;
-        }
-
-        p {
-            font-size: 1.8rem;
-        }
-    }
-
-    .m3 {
-        background-color: @background-color;
-        width: 30%;
-        padding: 2%;
-
-        i {
-            font-size: 5rem;
-            margin-left: 40%;
-            color: @main-color;
-        }
-
-        h2 {
-            font-size: 2.4rem;
-            margin-top: 10%;
-        }
-
-        p {
-            font-size: 1.8rem;
-        }
-      }
-    }
+}
 
     .bottom-section {
         display: flex;
         justify-content: space-between;
         background-color: @background-color;
+
+        @media @mobile {
+            margin-top: 5%;
+        } 
         
         div {
             padding: 10%;
@@ -138,7 +117,7 @@ header {
             .custom-btn(50%);
 
             @media @i-pad {
-                .custom-btn(20%);
+                .custom-btn(27%);
             }
         }
 
@@ -176,3 +155,4 @@ header {
 
         }
     }
+}

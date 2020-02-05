@@ -1,0 +1,165 @@
+.container-home {
+
+header {
+   background-color: @background-color;
+  
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        padding: 6%;
+
+        @media @mobile {
+            flex-direction: column-reverse;
+            
+                } 
+
+    .img-main{
+        width: 200%;
+        position: relative;
+
+        @media @mobile {
+            width: 70%;
+            margin: 0 auto;
+                } 
+
+        img {
+
+        }
+    }
+
+    div {
+        position: relative;
+        margin-right: 50px;
+
+        @media @mobile {
+            flex-direction: column-reverse;
+            margin: 0 auto;
+                } 
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 3%;
+        color: @main-color;
+    }
+
+    p{
+        color: @main-font-color;
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        .custom-btn(35%);
+    }
+  }
+ }
+}
+
+.mid-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2%;
+
+    @media @mobile {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    } 
+    
+    .m1 {
+        background-color: @background-color;
+        width: 30%;
+        padding: 5%;  
+
+        @media @mobile {
+            width: 100%;
+            margin-top: 5%;
+            margin-bottom: 3%;
+        } 
+
+        i {
+            font-size: 5rem;
+            margin-left: 40%;
+            color: @main-color;
+            
+        }
+
+        h2 {
+            font-size: 2.4rem;
+            margin-top: 10%;
+        }
+
+        p {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+    .bottom-section {
+        display: flex;
+        justify-content: space-between;
+        background-color: @background-color;
+
+        @media @mobile {
+            margin-top: 5%;
+        } 
+        
+        div {
+            padding: 10%;
+            
+        }
+
+        h1 {
+            color: @main-color;
+            font-size: 3rem;
+            margin-bottom: 3%;
+        }
+
+        p {
+            font-size: 1.6rem;
+        }
+
+        .btn {
+            .custom-btn(50%);
+
+            @media @i-pad {
+                .custom-btn(27%);
+            }
+        }
+
+        .bottom-image {
+            width: 200%;
+            position: relative;
+            
+            @media @i-pad {
+                display: none;
+            }
+           
+        img {
+            margin-top: 80px;
+            margin-bottom: -150px;
+            
+            @media @i-pad {
+                display: none;
+            }
+        }
+      }
+    }
+}
+
+    //about page 
+
+    .main-about {
+        text-align: center;
+        background-color: #E5E5E5;
+        padding: 20%;
+
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 10%;
+        }
+
+        p {
+            font-size: 1.6rem;
+        }
+    }

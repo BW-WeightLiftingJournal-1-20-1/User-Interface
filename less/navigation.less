@@ -10,13 +10,24 @@
         align-items: center;
 
         @media @mobile {
-            
-        }
+            position: relative;
+            overflow: hidden;
+            }
         
     h2 {
         color: @background-color;
         font-size: 1.6rem;
         margin-top: 7px;
+        margin-right: 50px;
+
+        @media @i-pad {
+            margin-right: 10px;
+        }
+
+        @media @mobile {
+            display: none;
+        }
+
     }
 
     a {
@@ -24,7 +35,51 @@
         justify-content: space-between;
         text-decoration: none;
         font-size: 1.9rem;
-        margin-left: 40px;
+        margin-left: 75px;
+
+        @media @i-pad {
+            margin-left: 10px;
+        }
+
+        @media @mobile {
+            display: none;
+            }
+
+         }
+
+    .vertical-menu {
+
+        @media @mobile {
+            width: 105%;
+        }
+       
+        .active {
+            display: none;
+
+            @media @mobile {
+                color: white;
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+                }
+        }
+
+        a {
+            display: none;
+
+            @media @mobile {
+                color: white;
+                display: block;
+                text-decoration: none;
+                background-color: @mobile-nav-color;
+                padding: 2%;
+            }
+        }
+
+        a:hover {
+            background-color: @main-color;
+        }
     }
   }
 }

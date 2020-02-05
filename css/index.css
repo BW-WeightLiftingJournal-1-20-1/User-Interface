@@ -178,17 +178,76 @@ nav .navbar {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  nav .navbar {
+    position: relative;
+    overflow: hidden;
+  }
+}
 nav .navbar h2 {
   color: #FAFAFA;
   font-size: 1.6rem;
   margin-top: 7px;
+  margin-right: 50px;
+}
+@media (max-width: 800px) {
+  nav .navbar h2 {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 500px) {
+  nav .navbar h2 {
+    display: none;
+  }
 }
 nav .navbar a {
   color: #FAFAFA;
   justify-content: space-between;
   text-decoration: none;
   font-size: 1.9rem;
-  margin-left: 40px;
+  margin-left: 75px;
+}
+@media (max-width: 800px) {
+  nav .navbar a {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 500px) {
+  nav .navbar a {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  nav .navbar .vertical-menu {
+    width: 105%;
+  }
+}
+nav .navbar .vertical-menu .active {
+  display: none;
+}
+@media (max-width: 500px) {
+  nav .navbar .vertical-menu .active {
+    color: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+nav .navbar .vertical-menu a {
+  display: none;
+}
+@media (max-width: 500px) {
+  nav .navbar .vertical-menu a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    background-color: #007343;
+    padding: 2%;
+  }
+}
+nav .navbar .vertical-menu a:hover {
+  background-color: #00A35E;
 }
 footer {
   padding: 1%;
@@ -380,15 +439,15 @@ footer .footer-wrap .contact-wrap .contact {
     display: none;
   }
 }
-.container-home .main-about {
+.main-about {
   text-align: center;
   background-color: #E5E5E5;
-  padding: 50%;
+  padding: 20%;
 }
-.container-home .main-about h1 {
+.main-about h1 {
   font-size: 2.4rem;
   margin-bottom: 10%;
 }
-.container-home .main-about p {
+.main-about p {
   font-size: 1.6rem;
 }

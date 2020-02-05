@@ -254,6 +254,12 @@ footer .footer-wrap .contact-wrap .contact {
   position: relative;
   margin-right: 50px;
 }
+@media (max-width: 500px) {
+  .container-home header .heading div {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+}
 .container-home header .heading div h1 {
   font-size: 3rem;
   margin-bottom: 3%;
@@ -377,8 +383,12 @@ footer .footer-wrap .contact-wrap .contact {
 .container-home .main-about {
   text-align: center;
   background-color: #E5E5E5;
-  padding: 20%;
+  padding: 50%;
 }
 .container-home .main-about h1 {
+  font-size: 2.4rem;
   margin-bottom: 10%;
+}
+.container-home .main-about p {
+  font-size: 1.6rem;
 }

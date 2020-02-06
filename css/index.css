@@ -439,15 +439,30 @@ footer .footer-wrap .contact-wrap .contact {
     display: none;
   }
 }
-.main-about {
-  text-align: center;
+.about-container {
   background-color: #E5E5E5;
-  padding: 20%;
+  padding: 10%;
 }
-.main-about h1 {
+.about-container .about-title {
+  text-align: center;
   font-size: 2.4rem;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
-.main-about p {
+.about-container .about-main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 3%;
+}
+.about-container .about-main .pic {
+  border: 7px solid #2D2D2D;
+  padding: 1%;
+  margin: 4%;
+}
+.about-container .about-main p {
   font-size: 1.6rem;
+  margin-top: 2.5%;
+}
+.about-container .about-main img {
+  height: 35vh;
 }

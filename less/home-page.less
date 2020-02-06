@@ -148,18 +148,38 @@ header {
 }
 
     //about page 
-
-    .main-about {
-        text-align: center;
+    
+    .about-container {
         background-color: #E5E5E5;
-        padding: 20%;
+        padding: 10%;
 
-        h1 {
+        .about-title {
+            text-align: center;
             font-size: 2.4rem;
-            margin-bottom: 10%;
-        }
+            margin-bottom: 5%;
+            }
+
+        .about-main {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding: 3%;
+
+            .pic {
+                border: 7px solid @footer-color;
+                padding: 1%;
+                margin: 4%;
+            }
 
         p {
             font-size: 1.6rem;
+            margin-top: 2.5%;
         }
+
+        img {
+            height: 35vh;
+            
+           
+        }
+      }
     }

@@ -589,3 +589,82 @@ header a:hover {
   padding: 20%;
   text-align: center;
 }
+
+.contact-title{
+  font-size: 1.5em;
+  
+  text-align: center;
+  margin-top: 2%;
+  background-color: #FAFAFA;
+}
+
+.namesection{
+  margin-left: 7%;
+}
+.namesection h4{
+  text-decoration: underline;
+}
+.contact-container{
+  background-color:#FAFAFA;
+}
+.blankspacecontainerone{
+  display: flex;
+  margin-top: -2%;
+}
+.blankspaceone{
+  border: 1px solid black;
+  width:20%;
+  padding: 1% 2%;
+  color: #FAFAFA;
+  margin-right: 2%;
+}
+
+.blankspacetwo{
+  border: 1px solid black;
+  width:20%;
+  padding: 1% 2%;
+  color: #FAFAFA;
+}
+.firstlastcontain{
+  display: flex;
+  
+}
+.firstlastcontain p{
+  width: 27%;
+  margin-top: -2%;
+}
+
+.emailsection{
+  margin-left: 7%;
+}
+.emailsection h4{
+  text-decoration: underline;
+}
+
+.blankspacecontainertwo{
+  display: flex;
+  margin-top: -2%;
+}
+
+.blankspacethree{
+  border: 1px solid black;
+  width:50%;
+  padding: 1% 2%;
+  color: #FAFAFA;
+  margin-right: 2%;
+}
+
+.blankspacefive{
+  border: 1px solid black;
+  width:50%;
+  padding: 5% 20%;
+  color: #FAFAFA;
+  margin-right: 2%;
+}
+
+.Submit{
+  padding: 1% 5%;
+  margin: 3% 0%;
+  text-decoration: underline;
+}
+

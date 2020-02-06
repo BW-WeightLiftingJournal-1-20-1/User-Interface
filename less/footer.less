@@ -3,13 +3,16 @@
     display: flex;
     justify-content: space-between;
     background-color: #2D2D2D;
+    width: 100%;
+    position: relative;
 }
 
-.copy{
+.footer-carson .copy{
     // border: 1px red solid;
     width: 49.5%;
     text-align: right;
     color: white;
+    padding: 1% 0;
     
 }
 
@@ -18,7 +21,8 @@
     width: 49.5%;
     display: flex;
     justify-content: space-between;
-    color: #67E6A1
+    color: #67E6A1;
+    padding: 1% 0;
 }
 .contact p{
     display:flex;
@@ -28,11 +32,29 @@
 .contactus {
     margin-right: 4%;
 }
+.icon {
+    height: 2vh;
+    margin-top: 5px;
+    margin-right: 4px;
+}
 
 @media @phone {
-    footer{
-        width: 380px;
-        margin-left: -3%;
+    .footer-carson{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copy {
+        align-items: center;
+        margin-right: 90px;;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 

@@ -113,7 +113,7 @@ header a:hover {
     display: block;
   }
 }
-footer {
+.footer-carson {
   display: flex;
   justify-content: space-between;
   background-color: #2D2D2D;

@@ -189,6 +189,7 @@ button {
 }
 .dropdown {
   overflow: hidden;
+  width: 100%;
 }
 .dropdown .dropbtn {
   outline: none;
@@ -202,7 +203,7 @@ button {
 }
 .dropdown-content {
   position: absolute;
-  width: 110%;
+  width: 100%;
   margin-left: -90%;
   margin-top: 10%;
   background-color: #007343;
@@ -216,12 +217,15 @@ button {
   background-color: #007343;
   padding: 12px 16px;
   text-align: right;
+  width: 100%;
 }
 .dropdown-content a:hover {
   background-color: #ddd;
+  width: 100%;
 }
 .dropdown:hover .dropdown-content {
   display: block;
+  width: 100%;
 }
 header {
   width: 100%;
@@ -282,15 +286,6 @@ header a:hover {
     overflow: hidden;
   }
   .dropdown .dropbtn {
-    background-color: white;
-    border: 1px solid #00A35E;
-    border-radius: 5px;
-    font-size: 1.6rem;
-    padding: 1.5%;
-    display: block;
-    width: 40%;
-    color: #00A35E;
-    text-align: center;
     outline: none;
     background-color: inherit;
     font-family: inherit;
@@ -355,6 +350,7 @@ header a:hover {
   margin-bottom: -4px;
 }
 .topcontent {
+  width: 100%;
   display: flex;
   padding: 3% 3%;
   background: linear-gradient(38.54deg, #FFFFFF 21.78%, #D1D1D1 113.31%);
@@ -371,6 +367,7 @@ header a:hover {
 }
 .topcontenttext button {
   background-color: white;
+  border: 1px solid #00A35E;
   border-radius: 5px;
   font-size: 1.6rem;
   padding: 1.5%;
@@ -379,8 +376,6 @@ header a:hover {
   color: #00A35E;
   text-align: center;
   text-decoration: none;
-  padding: 2% 5%;
-  border: 1px solid #00A35E;
 }
 .secondcontent {
   width: 100%;
@@ -429,7 +424,7 @@ header a:hover {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 5% 0%;
+  padding: 4%;
   background-color: #FAFAFA;
 }
 .thirdcontenttext {
@@ -440,14 +435,41 @@ header a:hover {
   color: #219653;
 }
 .thirdcontenttext button {
-  color: #00A35E;
   background-color: white;
-  text-decoration: none;
-  padding: 2% 5%;
   border: 1px solid #00A35E;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  padding: 1.5%;
+  display: block;
+  width: 35%;
+  color: #00A35E;
+  text-align: center;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .thirdcontenttext button {
+    background-color: white;
+    border: 1px solid #00A35E;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    padding: 1.5%;
+    display: block;
+    width: 40%;
+    color: #00A35E;
+    text-align: center;
+  }
 }
 .phonepic {
-  margin-right: 3%;
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: -60px;
+  margin-right: 5%;
+  width: 30%;
+}
+@media (max-width: 800px) {
+  .phonepic {
+    display: none;
+  }
 }
 @media ( max-width: 770px ) {
   .topcontentpic {
@@ -457,8 +479,7 @@ header a:hover {
     display: none;
   }
   .thirdcontent {
-    width: 140%;
-    margin-left: -5%;
+    width: 100%;
   }
 }
 @media ( max-width: 380px ) {
@@ -488,12 +509,17 @@ header a:hover {
   }
   .thirdcontent {
     margin-bottom: 15%;
+    width: 100%;
+  }
+  .thirdcontenttext {
+    width: 100%;
   }
 }
 .footer-carson {
   display: flex;
   justify-content: space-between;
   background-color: #2D2D2D;
+  width: 100%;
 }
 .copy {
   width: 49.5%;
@@ -515,8 +541,7 @@ header a:hover {
 }
 @media ( max-width: 380px ) {
   footer {
-    width: 380px;
-    margin-left: -3%;
+    width: 100%;
   }
 }
 .container-home {

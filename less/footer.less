@@ -3,6 +3,8 @@
     display: flex;
     justify-content: space-between;
     background-color: #2D2D2D;
+    width: 100%;
+    position: relative;
 }
 
 .copy{
@@ -10,6 +12,7 @@
     width: 49.5%;
     text-align: right;
     color: white;
+    padding: 1% 0;
     
 }
 
@@ -18,7 +21,8 @@
     width: 49.5%;
     display: flex;
     justify-content: space-between;
-    color: #67E6A1
+    color: #67E6A1;
+    padding: 1% 0;
 }
 .contact p{
     display:flex;
@@ -30,9 +34,11 @@
 }
 
 @media @phone {
-    footer{
-        width: 380px;
-        margin-left: -3%;
+    .footer-carson{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        // margin-left: -3%;
     }
 }
 

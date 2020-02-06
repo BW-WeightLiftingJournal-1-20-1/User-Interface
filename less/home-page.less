@@ -24,7 +24,10 @@
  .topcontenttext button{
     .custom-btn(50%);
     text-decoration: none;
-
+    &:hover {
+        color: @background-color;
+        background-color: @main-color;
+    }
 }
 
 .secondcontent {
@@ -102,6 +105,10 @@
 
 .thirdcontenttext button{
     .custom-btn(40%);
+    &:hover {
+        color: @background-color;
+        background-color: @main-color;
+    }
     text-decoration: none;
 
     @media @mobile {
@@ -111,7 +118,7 @@
 
 .phonepic{
     margin-top: 80px;
-    margin-bottom: -60px;
+    margin-bottom: -75px;
     margin-right: 5%;
     width: 30%;
 

@@ -1,173 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-* {
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-}
-html,
-body {
-  font-family: 'Roboto', sans-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: bolder;
-}
-h1 {
-  font-size: 4rem;
-}
-h2 {
-  font-size: 3.2rem;
-  padding-bottom: 10px;
-}
-h4 {
-  font-size: 2.5rem;
-  padding-bottom: 10px;
-}
-p {
-  line-height: 1.5;
-  font-size: 1.6rem;
-  padding-bottom: 10px;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
+
 body {
   font-size: 1.2rem;
 }
@@ -408,7 +239,7 @@ header a:hover {
 .about-container {
   width: 100%;
   background-color: #E5E5E5;
-  padding: 10%;
+  padding: 0%;
 }
 .about-container .about-title {
   text-align: center;
@@ -456,10 +287,10 @@ header a:hover {
   background-color: white;
   border: 1px solid #00A35E;
   border-radius: 5px;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   padding: 1.5%;
   display: block;
-  width: 50%;
+  width: 40%;
   color: #00A35E;
   text-align: center;
   text-decoration: none;
@@ -530,7 +361,7 @@ header a:hover {
   background-color: white;
   border: 1px solid #00A35E;
   border-radius: 5px;
-  font-size: 1.6rem;
+  font-size: 1rem;
   padding: 1.5%;
   display: block;
   width: 40%;
@@ -547,7 +378,7 @@ header a:hover {
     background-color: white;
     border: 1px solid #00A35E;
     border-radius: 5px;
-    font-size: 1.6rem;
+    font-size: 1.0rem;
     padding: 1.5%;
     display: block;
     width: 40%;
@@ -646,16 +477,17 @@ header a:hover {
   .footer-carson {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
   }
   .copy {
-    align-items: center;
-    margin-right: 90px;
+   width: 48%;
+ 
+   margin-top: 2%;
   }
   .contact {
+    width: 48%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 }
@@ -834,3 +666,84 @@ header a:hover {
   padding: 20%;
   text-align: center;
 }
+
+
+.contact-title{
+  font-size: 1.5em;
+  
+  text-align: center;
+  margin-top: 2%;
+  background-color: #FAFAFA;
+}
+
+.namesection{
+  margin-left: 7%;
+}
+.namesection h4{
+  text-decoration: underline;
+}
+.contact-container{
+  background-color:#FAFAFA;
+}
+.blankspacecontainerone{
+  display: flex;
+  margin-top: -2%;
+}
+.blankspaceone{
+  border: 1px solid black;
+  width:20%;
+  padding: 1% 2%;
+  color: #FAFAFA;
+  margin-right: 2%;
+}
+
+.blankspacetwo{
+  border: 1px solid black;
+  width:20%;
+  padding: 1% 2%;
+  color: #FAFAFA;
+}
+.firstlastcontain{
+  display: flex;
+  margin-top: 1%;
+  
+}
+.firstlastcontain p{
+  width: 27%;
+  margin-top: -2%;
+}
+
+.emailsection{
+  margin-left: 7%;
+}
+.emailsection h4{
+  text-decoration: underline;
+}
+
+.blankspacecontainertwo{
+  display: flex;
+  margin-top: -2%;
+}
+
+.blankspacethree{
+  border: 1px solid black;
+  width:50%;
+  padding: 1% 2%;
+  color: #FAFAFA;
+  margin-right: 2%;
+}
+
+.blankspacefive{
+  border: 1px solid black;
+  width:50%;
+  padding: 5% 20%;
+  color: #FAFAFA;
+  margin-right: 2%;
+}
+
+.Submit{
+  padding: 1% 5%;
+  margin: 3% 0%;
+  text-decoration: underline;
+}
+

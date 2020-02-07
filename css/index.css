@@ -287,7 +287,7 @@ header a:hover {
   background-color: white;
   border: 1px solid #00A35E;
   border-radius: 5px;
-  font-size: 1.0rem;
+  font-size: 1.3rem;
   padding: 1.5%;
   display: block;
   width: 40%;
@@ -667,6 +667,7 @@ header a:hover {
   text-align: center;
 }
 
+
 .contact-title{
   font-size: 1.5em;
   
@@ -745,3 +746,4 @@ header a:hover {
   margin: 3% 0%;
   text-decoration: underline;
 }
+
